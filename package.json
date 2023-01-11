@@ -1,0 +1,18 @@
+{
+  "name": "projeto-game-of-thrones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2",
+    "sharp": "^0.31.3"
+  }
+}

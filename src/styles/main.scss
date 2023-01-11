@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #003B5B;
+}
+
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
+
+    @media (min-width: 744px){
+        margin-left: 29px;
+        margin-right: 29px;
+    }
+
+    @media (min-width: 1044px){
+        margin-left: 56px;
+        margin-right: 56px;
+    }
+}
+
+.hero{
+    max-height: 178px;
+    height: 100%;
+    width: 100vw;
+    background-image: url(../images/hero3-mobile.png);
+    background-size: cover;
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        height: 32px;
+        background: rgba(82, 79, 79, 0.28);
+        backdrop-filter: blur(2px);
+        padding-left: 10px;
+        padding-right: 10px;
+        
+
+        img{
+            height: 26px;
+        }
+
+        &__theme{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img{
+                height: 26px;
+            }
+
+        }
+
+        @media (min-width: 744px){
+            height: 41px;
+            padding-left: 18px;
+            padding-right: 18px;
+            margin-left: 29px;
+            margin-right: 29px;
+            border-radius: 5px;
+
+            img{
+                height: 41px;
+            }
+
+            &__theme{
+                gap: 15px;
+
+                img{
+                    height: 30px;
+                }
+            }
+        }
+
+        @media (min-width: 1044px){
+            height: 81px;
+            padding-left: 35px;
+            padding-right: 35px;
+            margin-left: 56px;
+            margin-right: 56px;
+            border-radius: 5px;
+
+            img{
+                height: 81px;
+            }
+
+            &__theme{
+                gap: 17px;
+
+                img{
+                    height: 70px;
+                }
+            }
+        }
+    }
+
+    &__box{
+        width: 182px;
+        height: 222px;
+        padding: 9px 23px;
+        background: rgba(105, 105, 105, 0.09);
+        backdrop-filter: blur(2px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 8px;
+        margin: 113px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 744px){
+            width: 237px;
+            height: 288px;
+            margin: 50px 29px;
+            margin-bottom: 26px;
+        }
+
+        @media (min-width: 1044px){
+            width: 458px;
+            height: 558px;
+            margin: 50px 0;
+            margin-bottom: 26px;
+        }
+
+        h1{
+            border-bottom: 3px solid #F8B980;
+            text-align: center;
+
+            @media (min-width: 1044px){
+                margin-top: 15px;
+                width: 100%;
+            }
+        }
+
+        p{
+            font-size: 0.9rem;
+            max-width: 100%;
+            text-align: center;
+            margin-top: 17px;
+            margin-bottom: 17px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+
+            @media (min-width: 744px){
+                font-size: 1.2rem;
+            }
+
+            @media (min-width: 1044px){
+               font-size: 1.8rem;
+            }
+
+        }
+
+        &__div{
+            border-bottom: 3px solid #F8B980;
+            padding-bottom: 22px;
+            text-align: center;
+
+            @media (min-width: 1044px){
+                padding-bottom: 5.6rem;
+            }
+            input{
+                height: 20px;
+                width: 137px;
+                border-radius: 15px;
+                background-color: #FBF0E6;
+                border: none;
+                outline: none;
+                color: #003B5B;
+                padding: 8px;
+
+                @media (min-width: 1044px){
+                    height: 50px;
+                    width: 343px;
+                    border-radius: 15px;
+                    margin-top: 47px;
+                }
+                
+            }
+        }
+
+        button{
+            height: 25px;
+            width: 137px;
+            border-radius: 15px;
+            background-color: #F8B980;
+            border: none;
+            margin-top: 14px;
+
+            @media (min-width: 1044px){
+                height: 63px;
+                width: 343px;
+                font-size: 3.2rem;
+                margin-bottom: 7px;
+            }            
+        }
+
+        .checkbox{
+            width: 5px;
+            height: 5px;
+            background-color: #FBF0E6;
+            border: none;
+            margin-right: 5px;
+
+            @media (min-width: 1044px){
+                width: 10px;
+                height: 10px;
+            }
+        }
+        
+        span{
+            font-size: 0.8rem;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            margin-top: 7px;
+
+            @media (min-width: 1044px){
+                font-size: 1rem;
+            }
+
+        }
+    }
+
+    @media (min-width: 744px){
+        min-height: 41.9rem;
+        height: 100%;
+        background-image: url(../images/hero3.png);
+        padding-top: 5px;
+    }
+
+    @media (min-width: 1044px){
+        min-height: 810px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+    }
+}
+
+
+
+.title--big{
+    font-size: 2.4rem;
+
+    @media (min-width: 744px){
+        font-size: 4.2rem;
+    }
+
+    @media (min-width: 1044px){
+        font-size: 6.4rem;
+    }
+}
+
+.title--medium{
+    font-size: 1.8px;
+}
