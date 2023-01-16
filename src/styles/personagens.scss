@@ -1,0 +1,64 @@
+.personagens{
+
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 605px;
+    overflow: hidden;
+    margin: 0;
+
+    &__container{
+        display: flex;
+        width: 100%;
+
+        .painel{
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 405px;
+        // border-radius: 0;
+        color: white;
+        cursor: pointer;
+        flex: 0.5;
+        margin: 10px;
+        position: relative;
+        transition: flex 0.7s ease-in;
+        }
+
+        .painel h3{
+            font-size: 2.4rem;
+            position: absolute;
+            bottom: 20px;
+            left: 50px;
+            margin: 0;
+            opacity: 0;
+        }
+        
+        .painel.active{
+            flex: 5;
+        }
+        
+        .painel.active h3{
+            opacity: 1;
+            transition: opacity 2s ease-in;
+        }
+    }
+
+    @media(max-width: 480px){
+
+        height: 505px;
+        &__container{
+            width: 100vw;
+        }
+
+        .painel h3{
+            left: 20px;
+        }
+    
+        .painel:nth-of-type(4),
+        .painel:nth-of-type(5){
+            display: none;
+        }
+    }
+}

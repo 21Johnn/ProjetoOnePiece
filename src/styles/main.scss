@@ -1,3 +1,6 @@
+@use 'historia';
+@use 'personagens';
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -261,5 +264,5 @@ body{
 }
 
 .title--medium{
-    font-size: 1.8px;
+    font-size: 1.8rem;
 }
