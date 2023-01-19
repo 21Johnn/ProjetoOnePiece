@@ -1,0 +1,118 @@
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    &__firstScreen{
+        display: none;
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #435E64;
+
+        img{
+            width: 180px;
+            margin-top: 10px;
+        }
+
+        button{
+            width: 115px;
+            height: 25px;
+            border-radius: 10px;
+            font-size: 1.6rem;
+            border: none;
+            background-color: #003B5B;
+            color: white;
+        }
+    }
+
+    &__secondScreen{
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #435E64;
+
+        img{
+            width: 75%;
+            margin-bottom: 16px;
+        }
+
+        span{
+            font-size: 2rem;
+        }
+    }
+
+    &__bind{
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #435E64;
+
+        button{
+            width: 100px;
+            height: 20px;
+            font-size: 1.4rem;
+            color: white;
+            background-color: #003B5B;
+            border-radius: 8px;
+            border: transparent;
+        }
+    }
+
+    &__thirdScreen{
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #435E64;
+
+        &__personagens{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 25px;
+
+            img{
+                width: 50px;
+                height: 35px;
+            }
+
+            .personagem{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    height: 80px;
+                    width: 101px;
+                }
+
+                h4{
+                    font-size: 1.6rem;
+                }
+
+                table{
+                    td{
+                        padding-right: 12px;
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

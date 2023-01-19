@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet">
+
+    <!-- bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -59,7 +63,7 @@
     </section>
     <section class="personagens container">
         <div class="personagens__container">
-            <div class="painel active" style="background-image: url('images/luffypainel.png');">
+            <div class="painel" style="background-image: url('images/luffypainel.png');">
                 <h3>Luffy</h3>
             </div>
             <div class="painel" style="background-image: url('images/zoropainel.png');">
@@ -76,7 +80,133 @@
             </div>
         </div>
     </section>
+    <section class="wallpapers container pb-5">
+        <h2 class="title--big" style="text-align: center;">WALLPAPERS</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <img src="images/chapeus1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                    <img src="images/chapeus2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                    <img src="images/chapeus3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/chapeus4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/chapeus5.png" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
 
+    <section class="game container">
+        <h4>sorteie um personagem para ver se o zoro sola</h4>
+
+        <div class="game__firstScreen" id="firstScreen">
+            <img src="images/zoro.png" alt="zoro">
+            <button id="sortear">SORTEAR</button>
+        </div>
+
+        <div class="game__secondScreen" id="secondScreen">
+            <img src="images/load.gif" alt="carregando">
+            <span>PROCURANDO POR UM PIRATA A SUA ALTURA</span>
+        </div>
+
+        <div class="game__bind" id="telaAposta">
+            <span id="resultado">...</span>
+            <div class="game__thirdScreen__personagens">
+                <div class="personagem" id="zoro">
+                    <img src="images/zoro.png" alt="zoro">
+                    <h4>ZORO</h4>
+                    <button id="apostaDefault">APOSTAR</button>
+                </div>
+
+                <img src="images/VS-PNG.png" alt="">
+
+                <div class="personagem" id="oponente">
+                    <img id="imagemOponente" src="images/luffy.png" alt="oponente">
+                    <h4 id="nomeOponente">Luffy</h4>
+                    <button id="apostaRandom">APOSTAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game__thirdScreen" id="thirdScreen">
+            <span id="resultado">...</span>
+            <div class="game__thirdScreen__personagens">
+                <div class="personagem">
+                    <img src="images/zoro.png" alt="zoro">
+                    <h4>ZORO</h4>
+                    <table>
+                        <tr>
+                            <td>Força</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>Agilidade</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Rsistencia</td>
+                            <td>95</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <img src="images/VS-PNG.png" alt="">
+
+                <div class="personagem" id="oponente">
+                    <img id="imagemOponente2" src="images/luffy.png" alt="oponente">
+                    <h4 id="nomeOponente">Luffy</h4>
+                    <table>
+                        <tr>
+                            <td>Força</td>
+                            <td id="forcaOponente">75</td>
+                        </tr>
+                        <tr>
+                            <td>Agilidade</td>
+                            <td id="agilidadeOponente">90</td>
+                        </tr>
+                        <tr>
+                            <td>Rsistencia</td>
+                            <td id="resistenciaOponente">95</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
     <script src="scripts/main.js"></script>
 
 </body>

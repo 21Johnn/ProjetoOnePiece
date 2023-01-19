@@ -1,5 +1,7 @@
 @use 'historia';
 @use 'personagens';
+@use 'game';
+
 
 *{
     box-sizing: border-box;
@@ -14,7 +16,7 @@
 }
 
 body{
-    background-color: #003B5B;
+    background-color: #003B5B !important;
 }
 
 .container{
