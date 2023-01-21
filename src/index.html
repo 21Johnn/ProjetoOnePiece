@@ -20,27 +20,27 @@
 
 </head>
 
-<body>
+<body style="background-color: #003B5B;">
 
-    <header class="hero">
+    <header class="hero" id="hero">
         <nav class="hero__nav">
             <img src="images/One-Piece-Logo.png" alt="">
             <div class="hero__nav__theme">
                 <span>ESCOLHA O TEMA:</span>
-                <img src="images/chapeus de palha.png" alt="tema chapeus de palha">
-                <img src="images/marinha.png" alt="tema marinha">
+                <img src="images/chapeus de palha.png" alt="tema chapeus de palha" id="chapeus">
+                <img src="images/marinha.png" alt="tema marinha" id="marinha">
             </div>
         </nav>
         <div class="container">
             <div class="hero__box">
-                <h1 class="title--big">ONE PIECE</h1>
+                <h1 class="title--big" id="borderh1">ONE PIECE</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit, velit sit
                     amet sollicitudin tristique
                 </p>
-                <div class="hero__box__div">
-                    <input type="email">
+                <div class="hero__box__div" id="borderh2">
+                    <input type="email" id="input">
                 </div>
-                <button>ASSINAR</button>
+                <button id="button">ASSINAR</button>
                 <div>
                     <input type="checkbox" class="checkbox">
                     <span>"Li e aceito os termos de uso"</span>
@@ -48,7 +48,7 @@
             </div>
         </div>
     </header>
-    <section class="historia container">
+    <section class="historia container" id="historia">
             <div class="historia__descricao">
                 <h2 class="title--big">HISTORIA</h2>
                 <P>
@@ -59,24 +59,24 @@
                     One Piece é conhecido por sua ação emocionante, personagens carismáticos e enredos complexos.
                 </P>
             </div>
-            <img src="images/asce.png" alt="" class="historia__img">
+            <img src="images/asce.png" alt="" class="historia__img" id="img--historia">
     </section>
     <section class="personagens container">
         <div class="personagens__container">
-            <div class="painel" style="background-image: url('images/luffypainel.png');">
-                <h3>Luffy</h3>
+            <div class="painel" style="background-image: url('images/luffypainel.png');" id="img1">
+                <h3 id="nome1">Luffy</h3>
             </div>
-            <div class="painel" style="background-image: url('images/zoropainel.png');">
-                <h3>Zoro</h3>
+            <div class="painel" style="background-image: url('images/zoropainel.png');" id="img2">
+                <h3 id="nome2">Zoro</h3>
             </div>
-            <div class="painel" style="background-image: url('images/sanjipainel.png');">
-                <h3>Sanji</h3>
+            <div class="painel" style="background-image: url('images/sanjipainel.png');" id="img3">
+                <h3 id="nome3">Sanji</h3>
             </div>
-            <div class="painel" style="background-image: url('images/chopperpainel.png');">
-                <h3>Chopper</h3>
+            <div class="painel" style="background-image: url('images/chopperpainel.png');" id="img4">
+                <h3 id="nome4">Chopper</h3>
             </div>
-            <div class="painel" style="background-image: url('images/nicopainel.png');">
-                <h3>Nico Robin</h3>
+            <div class="painel" style="background-image: url('images/nicopainel.png');" id="img5">
+                <h3 id="nome5">Nico Robin</h3>
             </div>
         </div>
     </section>
@@ -97,19 +97,19 @@
             </div>
             <div class="carousel-inner">
             <div class="carousel-item active">
-                    <img src="images/chapeus1.png" class="d-block w-100" alt="...">
+                    <img src="images/chapeus1.png" class="d-block w-100" alt="..." id="wall1">
             </div>
             <div class="carousel-item">
-                    <img src="images/chapeus2.png" class="d-block w-100" alt="...">
+                    <img src="images/chapeus2.png" class="d-block w-100" alt="..." id="wall2">
             </div>
             <div class="carousel-item">
-                    <img src="images/chapeus3.png" class="d-block w-100" alt="...">
+                    <img src="images/chapeus3.png" class="d-block w-100" alt="..." id="wall3">
             </div>
             <div class="carousel-item">
-                <img src="images/chapeus4.png" class="d-block w-100" alt="...">
+                <img src="images/chapeus4.png" class="d-block w-100" alt="..." id="wall4">
             </div>
             <div class="carousel-item">
-                <img src="images/chapeus5.png" class="d-block w-100" alt="...">
+                <img src="images/chapeus5.png" class="d-block w-100" alt="..." id="wall5">
             </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -139,7 +139,6 @@
         </div>
 
         <div class="game__bind" id="telaAposta">
-            <span id="resultado">...</span>
             <div class="game__thirdScreen__personagens">
                 <div class="personagem" id="zoro">
                     <img src="images/zoro.png" alt="zoro">
@@ -158,23 +157,25 @@
         </div>
 
         <div class="game__thirdScreen" id="thirdScreen">
-            <span id="resultado">...</span>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <span id="resultado">...</span> <button id="restart">RESTART</button>
+            </div>
             <div class="game__thirdScreen__personagens">
                 <div class="personagem">
                     <img src="images/zoro.png" alt="zoro">
                     <h4>ZORO</h4>
                     <table>
                         <tr>
-                            <td>Força</td>
-                            <td>75</td>
+                            <td >Força</td>
+                            <td id="forcaZoro">75</td>
                         </tr>
                         <tr>
                             <td>Agilidade</td>
-                            <td>90</td>
+                            <td id="agilidadeZoro">90</td>
                         </tr>
                         <tr>
                             <td>Rsistencia</td>
-                            <td>95</td>
+                            <td id="ResZoro">95</td>
                         </tr>
                     </table>
                 </div>
@@ -183,7 +184,7 @@
 
                 <div class="personagem" id="oponente">
                     <img id="imagemOponente2" src="images/luffy.png" alt="oponente">
-                    <h4 id="nomeOponente">Luffy</h4>
+                    <h4 id="nomeOponenteRes">Luffy</h4>
                     <table>
                         <tr>
                             <td>Força</td>
@@ -204,6 +205,17 @@
 
 
     </section>
+    <footer id="footer">
+        <img src="images/One-Piece-Logo.png" alt="">
+        <div>
+            <p>© Echiro Oda. Todos os direitos reservados ao criador da obra (JAPAN).</p>
+            <div class="footerContainer">
+                <a href="">Termos de uso</a>
+                <a href="">Fale Conosco</a>
+                <a href="">politicas</a>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 

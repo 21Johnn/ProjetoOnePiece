@@ -4,9 +4,22 @@
     align-items: center;
     margin-top: 50px;
     margin-bottom: 100px;
+    
+
+    h4{
+        font-size: 2rem;
+
+        @media (min-width: 744px){
+            font-size: 3rem;
+        }
+
+        @media (min-width: 1044px){
+            font-size: 4rem;
+        }
+    }
 
     &__firstScreen{
-        display: none;
+        display: flex;
         margin-top: 20px;
         width: 100%;
         height: 200px;
@@ -29,6 +42,39 @@
             background-color: #003B5B;
             color: white;
         }
+
+        @media (min-width: 744px){
+            margin-top: 40px;
+            height: 400px;
+
+            img{
+                width: 331px;
+                margin-top: 35px;
+            }
+
+            button{
+                width: 262px;
+                height: 40px;
+                font-size: 2.4rem;
+                margin-top: 15px;
+            }
+        }
+
+        @media (min-width: 1044px){
+            height: 700px;
+
+            img{
+                width: 640px;
+                margin-top: 40px;
+            }
+
+            button{
+                width: 509px;
+                height: 63px;
+                font-size: 3.6rem;
+                margin-top: 15px;
+            }
+        }
     }
 
     &__secondScreen{
@@ -49,6 +95,23 @@
         span{
             font-size: 2rem;
         }
+
+        @media (min-width: 744px){
+            margin-top: 40px;
+            height: 400px;
+
+            span{
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (min-width: 1044px){
+            height: 700px;
+
+            span{
+                font-size: 3.2rem;
+            }
+        }        
     }
 
     &__bind{
@@ -70,6 +133,27 @@
             border-radius: 8px;
             border: transparent;
         }
+
+        @media (min-width: 744px){
+            margin-top: 40px;
+            height: 400px;
+
+            button{
+                width: 200px;
+                height: 40px;
+                font-size: 2.4rem;
+            }
+        }
+
+        @media (min-width: 1044px){
+            height: 700px;
+
+            button{
+                width: 350px;
+                height: 50px;
+                font-size: 2.8rem;
+            }
+        }
     }
 
     &__thirdScreen{
@@ -86,7 +170,7 @@
             display: flex;
             align-items: center;
             gap: 25px;
-            margin-top: 25px;
+            margin-top: 10px;
 
             img{
                 width: 50px;
@@ -114,5 +198,82 @@
                 }
             }
         }
+
+        @media (min-width: 744px){
+            margin-top: 40px;
+            height: 400px;
+
+            &__personagens{
+    
+                img{
+                    width: 100px;
+                    height: 70px;
+                }
+    
+                .personagem{
+                    img{
+                        height: 160px;
+                        width: 202px;
+                    }
+    
+                    h4{
+                        font-size: 2rem;
+                    }
+    
+                    table{
+                        font-size: 2rem;
+                        td{
+                            padding-right: 12px;
+                            padding-left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 1044px){
+            height: 700px;
+
+            &__personagens{
+    
+                img{
+                    width: 200px;
+                    height: 140px;
+                }
+    
+                .personagem{
+                    img{
+                        height: 320px;
+                        width: 404px;
+                    }
+    
+                    h4{
+                        font-size: 2.4rem;
+                    }
+    
+                    table{
+                        font-size: 2.4rem;
+                        td{
+                            padding-right: 12px;
+                            padding-left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 744px){
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+}
+
+#resultado{
+    font-size: 2rem;
+
+    @media (min-width: 744px){
+        font-size: 3rem;
     }
 }

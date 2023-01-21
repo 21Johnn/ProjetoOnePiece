@@ -1,6 +1,7 @@
 @use 'historia';
 @use 'personagens';
 @use 'game';
+@use 'footer';
 
 
 *{
@@ -15,10 +16,6 @@
     font-size: 62.5%;
 }
 
-body{
-    background-color: #003B5B !important;
-}
-
 .container{
     margin-left: 10px;
     margin-right: 10px;
@@ -28,7 +25,7 @@ body{
         margin-right: 29px;
     }
 
-    @media (min-width: 1044px){
+    @media (min-width: 1281px){
         margin-left: 56px;
         margin-right: 56px;
     }
@@ -53,6 +50,7 @@ body{
 
         img{
             height: 26px;
+            cursor: pointer;
         }
 
         &__theme{
@@ -62,6 +60,10 @@ body{
 
             img{
                 height: 26px;
+            }
+
+            span{
+                font-size: 1.8rem;
             }
 
         }
@@ -106,6 +108,10 @@ body{
                     height: 70px;
                 }
             }
+        }
+
+        @media (min-width: 1281px){
+            
         }
     }
 
@@ -160,9 +166,8 @@ body{
             }
 
             @media (min-width: 1044px){
-               font-size: 1.8rem;
+                font-size: 1.8rem;
             }
-
         }
 
         &__div{
@@ -267,4 +272,14 @@ body{
 
 .title--medium{
     font-size: 1.8rem;
+}
+
+#restart{
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #003B5B;
+    color: white;
 }
